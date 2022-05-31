@@ -1,30 +1,25 @@
-import MenuUtama from './Page/MenuUtama';
-import MenuProduct from './Page/MenuProduct';
-import MenuTentangKami from './Page/MenuTentangKami';
-import MenuKontak from './Page/MenuKontak';
+import React, { Component } from "react";
+import Header from "./Page/Header";
+import MenuUtama from "./Page/MenuUtama";
+import MenuMakanan from "./Page/MenuMakanan";
+import MenuTentangKami from "./Page/MenuTentangKami";
+import MenuKontak from "./Page/MenuKontak";
+import Footer from "./Page/Footer";
 
-const Header = () => {
-	return (
-		<h1>Ini Halaman Untuk Header</h1>
-	);
-}
+class App extends Component {
+	render() {
+		return (
+		<div>
+			<Header />
+			<MenuUtama />
+			<MenuMakanan/>
 
-const Footer = () => {
-	return (
-		<h1>Ini Halaman Untuk Footer</h1>
-	);
-}
-const App = () => {
-  return (
-	<div>
-		<Header />
-		<MenuUtama />
-		<MenuProduct />
-		<MenuTentangKami />
-		<MenuKontak />
-		<Footer />
-	</div>
-  );
+			<MenuTentangKami />
+			<MenuKontak />
+			<Footer />
+		</div>
+		);
+	}
 }
 
 export default App;

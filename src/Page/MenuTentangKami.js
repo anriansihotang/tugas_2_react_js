@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 
 class MenuTentangKami extends Component {
- render() {
-   return (
-     <p>Ini Halaman Menu Tentang Kami</p>
-   );
- }
+	constructor(props) {
+		super(props);
+		this.state = {
+			tentang: "Warung Nusantara Adalah Yang Bernuasa Makanan Nusantara, Kami Ada Untuk Anda Menikmati Makanan Khas Dari Nusantara"
+		};
+	}
+	render() {
+		return (
+		<div>
+			<center>
+				<p>Tentang Kami</p> {this.state.tentang}
+			</center>
+		</div>
+		);
+	}
 }
 
 export default MenuTentangKami; 
